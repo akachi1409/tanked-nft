@@ -62,7 +62,8 @@
 .mintTextLayout{ 
     margin-top: 3em;
     display: flex;
-    color: white;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .mintTextLayout header{ 
@@ -73,6 +74,13 @@
     font-size: 32px;
     color: white;
 } 
+.mintDescription{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
 @media (max-width: 1440px){
     .bannerSec .bannerLeftImg {
         left: -13%;
@@ -133,6 +141,12 @@
     .mintTextLayout span{
         font-size: 18px;
     } 
+    .mintDescription{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 2em;
+        margin-right: 1em;
+    }
 }
 @media (max-width: 480px){
     .bannerSec { 
