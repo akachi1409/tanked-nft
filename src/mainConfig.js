@@ -4,14 +4,14 @@ import QRCodeModal from "@walletconnect/qrcode-modal";
 import { WalletLinkConnector } from "@web3-react/walletlink-connector";
 import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 
-const INFURA_KEY = "28e2008ae4974ac4942f6854a85fe21d";
+const INFURA_KEY = "c6c245e8924c42bca2e0d7df704afabe";
 export const COVALENT_KEY = "ckey_414fa5c3b5eb4756b7aebbbef7a"
 export const ALCHEMY_URL = "https://eth-mainnet.g.alchemy.com/v2/AMOJ1FcsPrwRNNTVS8NLknGwn2-maa8G"
 export const GOERLI_ALCHEMY_URL = "https://eth-goerli.g.alchemy.com/v2/28v9IABMj7WtEWBqWRJMzu1qipsviW29"
 
 export const RAINBOW_URL = "https://rainbow.me/api/assets?network=ethereum"
 export const POLLING_INTERVAL = 12000;
-
+export const PROVIDER = "https://mainnet.infura.io/v3/c6c245e8924c42bca2e0d7df704afabe"
 const config = {
    'goerli': {
        CHAIN_NAME: "Goerli Testnet",

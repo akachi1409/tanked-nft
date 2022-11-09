@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useWeb3React } from '@web3-react/core';
 import Grid from '@mui/material/Grid';
-import { useWeb3 } from 'hooks/useWeb3';
+import Web3 from "web3";
 import "./index.css"
+import {PROVIDER} from "../../mainConfig.js"
 import mintImg from "../../assets/images/436.png"
 import bannerLeftSideImg from "../../assets/images/banner-left-side-img.webp"
 import bannerHeadingImg from "../../assets/images/banner-heading-img..webp"
@@ -10,13 +11,13 @@ import bannerSideImg from "../../assets/images/banner-side-img.webp"
 export default function Nfts() {
   const { account } = useWeb3React()
   const [balance, setBalance] = useState(0)
-  const web3 = useWeb3()
   useEffect(async() => {
     if (account) {
-      console.log(account);
+      const web3 = new Web3(PROVIDER);
       var tempBalance = await web3.eth.getBalance(account); //Will give value in.
       // console.log(tempBalance)
-      tempBalance = web3.utils.fromWei(balance);
+      tempBalance = web3.utils.fromWei(tempBalance);
+      tempBalance = tempBalance.split(".")[0] + "." + tempBalance.split(".")[1].substring(0,3)
       setBalance(tempBalance)
     }
   }, [account])
