@@ -1,0 +1,455 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_ccID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_contractSigner",
+				"type": "address"
+			}
+		],
+		"name": "addContractSigner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "addressToString",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "value",
+				"type": "bytes32"
+			}
+		],
+		"name": "bytesToString",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "a",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "b",
+				"type": "uint256"
+			}
+		],
+		"name": "calcDiv",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ccCounter",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_companyName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_contractType",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_contractSigner",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_contractURI",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_dateFrom",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_dateTo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_agreedPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_currency",
+				"type": "string"
+			}
+		],
+		"name": "ccCreation",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllContractsByOwner",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "contractId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "companyName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "contractType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "contractURI",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateFrom",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateTo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "agreedPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "currency",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "creatorApproval",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "creatorSignDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "contractSigner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "signerApproval",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "signerSignDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"internalType": "struct MainCleanContract.CleanContract[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllContractsBySigner",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "contractId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "companyName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "contractType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "contractURI",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateFrom",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateTo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "agreedPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "currency",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "creatorApproval",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "creatorSignDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "contractSigner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "signerApproval",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "signerSignDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"internalType": "struct MainCleanContract.CleanContract[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllNotifies",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "nSender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "nReceiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ccID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "notifySentTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "notifyContent",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct MainCleanContract.Notify[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getUploadedCounter",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_notifyReceiver",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_notifyContent",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "ccID",
+				"type": "uint256"
+			}
+		],
+		"name": "sendNotify",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ccID",
+				"type": "uint256"
+			}
+		],
+		"name": "signContract",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "data",
+				"type": "bytes"
+			}
+		],
+		"name": "toString",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "uintToString",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]

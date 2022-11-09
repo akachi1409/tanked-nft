@@ -1,0 +1,315 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_newCategory",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_properties",
+				"type": "uint256[]"
+			}
+		],
+		"name": "addCategory",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_categoryID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_packageName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_period",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_dataLimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool[]",
+				"name": "_propertyVisible",
+				"type": "bool[]"
+			}
+		],
+		"name": "addPackage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_propertyName",
+				"type": "string"
+			}
+		],
+		"name": "addProperty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_categoryID",
+				"type": "uint256"
+			}
+		],
+		"name": "deleteCategory",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_categoryID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_packageID",
+				"type": "uint256"
+			}
+		],
+		"name": "deletePackage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_propertyID",
+				"type": "uint256"
+			}
+		],
+		"name": "deleteProperty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_categoryID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_editCategory",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_properties",
+				"type": "uint256[]"
+			}
+		],
+		"name": "editCategory",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_categoryID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_packageID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_packageName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_period",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_dataLimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool[]",
+				"name": "_propertyVisible",
+				"type": "bool[]"
+			}
+		],
+		"name": "editPackage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_propertyID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_propertyName",
+				"type": "string"
+			}
+		],
+		"name": "editProperty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllCategories",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "categoryID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "cartegoryName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "properties",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bool",
+						"name": "visible",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct ThirdParty.Category[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllProperties",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyName",
+						"type": "string"
+					}
+				],
+				"internalType": "struct ThirdParty.Property[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_categoryID",
+				"type": "uint256"
+			}
+		],
+		"name": "getPackagesByCategory",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "categoryID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "packageID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "packageName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "period",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dataLimit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool[]",
+						"name": "propertyVisible",
+						"type": "bool[]"
+					}
+				],
+				"internalType": "struct ThirdParty.Package[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
